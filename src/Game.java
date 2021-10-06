@@ -22,9 +22,12 @@ public class Game {
             int dogAge = scanner.nextInt();
 
             if (dogAge <= 10) {
+                boolean puppyOrNot = true;
                 System.out.println("Omg, " + dogName + " is a puppy, how cute!");
             } else {
+                boolean puppyOrNot = false;
                 System.out.println(dogName + " is an adult dog, pawesome");
+
             }
 
             System.out.println("And what color is " + dogName + "?");
@@ -36,7 +39,7 @@ public class Game {
             String dogSound = scanner.next();
             System.out.println("\n");
 
-            Dog dog = new Dog(dogName, dogAge, "content", 50, dogColor, dogSound);
+            Dog dog = new Dog(dogName, dogAge, "content", 50, dogColor, dogSound, puppyOrNot);
             System.out.println("Alrighty here is " + dogName + "'s details");
             dog.printDogsDetail();
             System.out.println("Now, lets play " + dogSound);
@@ -60,6 +63,7 @@ public class Game {
                 } else if (playChoice == 7){
                     dog.stand();
                 }
+                System.out.println("\n");
             }
 
             //Cat//
@@ -74,8 +78,10 @@ public class Game {
             int catAge = scanner.nextInt();
 
             if (catAge >= 0 && catAge <= 10) {
+                boolean kittyOrNot = true;
                 System.out.println("Omg, " + catName + " is a kitten, how cute!");
             } else {
+                boolean kittyOrNot = false;
                 System.out.println(catName + " is an adult cat, purr-fect");
             }
 
@@ -87,7 +93,7 @@ public class Game {
             System.out.println("What does " + catName + " say?");
             String catSound = scanner.next();
 
-            Cat cat = new Cat(catName, catAge, "content", 50, catColor, catSound);
+            Cat cat = new Cat(catName, catAge, "content", 50, catColor, catSound, kittyOrNot);
             System.out.println("Here you have every details of " + catName);
             cat.printCatDetails();
             System.out.println("Now, let's play " + catSound);
@@ -111,6 +117,7 @@ public class Game {
                 } else if (playChoice == 7){
                     cat.hunt();
                 }
+                System.out.println("\n");
             }
 
         } else {
