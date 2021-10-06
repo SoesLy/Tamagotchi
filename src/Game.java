@@ -115,7 +115,7 @@ public class Game {
                 } else if (playChoice == 6) {
                     cat.bath();
                 } else if (playChoice == 7){
-                    cat.hunt();
+                    cat.hunt(); //This is saying stand from Dog class instead of hunt!
                 }
                 System.out.println("\n");
             }
