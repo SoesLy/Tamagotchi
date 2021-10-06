@@ -1,11 +1,16 @@
 public class Cat extends Tamagotchi {
 
-    public boolean kittenOrNot;
+    public String catSound;
 
-
-    public Cat(String name, int age, String mood, int energy, String color, boolean kittenOrNot) {
+    public Cat(String name, int age, String mood, int energy, String color, boolean kittenOrNot, boolean meowOrNot) {
         super(name, age, mood, energy, color);
-        this.kittenOrNot = kittenOrNot;
+        this.catSound = catSound;
     }
+
+        public void hunt() {
+
+            return;
+    }
+
 }
 
