@@ -25,6 +25,7 @@ public class Dog extends Tamagotchi{
     }
 
     public void stand() {
+        System.out.println("Look what I can do!! " + dogSound);
 
         return;
     }

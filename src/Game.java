@@ -34,11 +34,33 @@ public class Game {
             System.out.println("And the last but not least....");
             System.out.println("What does " + dogName + " say?");
             String dogSound = scanner.next();
+            System.out.println("\n");
 
             Dog dog = new Dog(dogName, dogAge, "content", 50, dogColor, dogSound);
             System.out.println("Alrighty here is " + dogName + "'s details");
             dog.printDogsDetail();
             System.out.println("Now, lets play " + dogSound);
+            System.out.println("\n");
+
+            //Actions
+            for (int i = 3; i < 7; i++) {
+
+                System.out.println("What would you like to do with " + dogName);
+                System.out.println(" 3. feed\n 4. play\n 5. sleep\n 6. bath\n 7. stand");
+                int playChoice = scanner.nextInt();
+
+                if (playChoice == 3) {
+                    dog.feed();
+                } else if (playChoice == 4) {
+                    dog.play();
+                } else if (playChoice == 5) {
+                    dog.sleep();
+                } else if (playChoice == 6) {
+                    dog.bath();
+                } else if (playChoice == 7){
+                    dog.stand();
+                }
+            }
 
             //Cat//
         } else if (chooseAnimal == 2) {
@@ -69,8 +91,31 @@ public class Game {
             System.out.println("Here you have every details of " + catName);
             cat.printCatDetails();
             System.out.println("Now, let's play " + catSound);
-        }
+            System.out.println("\n");
 
+            //Actions
+            for (int i = 3; i < 7; i++) {
+
+                System.out.println("What would you like to do with " + catName);
+                System.out.println(" 3. feed\n 4. play\n 5. sleep\n 6. bath\n 7. stand");
+                int playChoice = scanner.nextInt();
+
+                if (playChoice == 3) {
+                    cat.feed();
+                } else if (playChoice == 4) {
+                    cat.play();
+                } else if (playChoice == 5) {
+                    cat.sleep();
+                } else if (playChoice == 6) {
+                    cat.bath();
+                } else if (playChoice == 7){
+                    cat.hunt();
+                }
+            }
+
+        } else {
+            System.out.println("Please input a number!");
+        }
 
 
     }

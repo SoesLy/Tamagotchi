@@ -20,6 +20,7 @@ public class Cat extends Tamagotchi {
     }
 
     public void hunt() {
+        System.out.println("Rawwrr! I'm a dangerous hunter!");
 
         return;
     }

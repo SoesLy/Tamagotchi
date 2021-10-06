@@ -15,21 +15,43 @@ public class Tamagotchi {
         this.color = color;
     }
 
+    public int addEnergy(){
+      int addEnergy = energy + 5;
+
+      return addEnergy;
+    }
+
     public void feed() {
 
-        System.out.println(this.name + "feels more full"  ); //add energy points
+        boolean feed = true;
+        if (feed) {
+
+            System.out.println(this.name + " feel more full"); //add energy points
+            System.out.println(this.name + "'s energy has increased " + addEnergy());
+        }
 
     }
 
     public void play() {
+        boolean play = true;
+        if (play){
+            String addMood = mood + 5;
+            int loseEnergy = energy - 5;
 
-        System.out.println(this.name + "feels happy, but exhausted"); //lose energy points
-
+            System.out.println(this.name + "feels happy, but is exhausted"); //lose energy points
+            System.out.println(this.name + "'s mood has increased " + addEnergy());
+            System.out.println(this.name + "'s energy has decreased " + loseEnergy);
+        }
 
     }
 
     public void sleep() {
+        boolean sleep = true;
+        if(sleep){
+            int addEnergyTimes5 = energy * 5;
 
+            System.out.println(this. name + "'s energy has increased" + addEnergyTimes5);
+        }
 
     }
 
@@ -37,11 +59,6 @@ public class Tamagotchi {
         System.out.println("No no, please don't...");
         System.out.println(this.name + "feels more clean");
 
-
-    }
-
-    public void tamagotchiSound(){
-        System.out.println("...");
     }
 
 }
