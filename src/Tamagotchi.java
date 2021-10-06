@@ -15,6 +15,12 @@ public class Tamagotchi {
         this.color = color;
     }
 
+    public void Mood() { //I want to change mood from exhaused to content to happy using integer
+        String mood = "";
+
+        if(this.mood >= 75 && = 100)
+    }
+
     public int addEnergy(){
       int addEnergy = energy + 5;
 
@@ -26,7 +32,7 @@ public class Tamagotchi {
         boolean feed = true;
         if (feed) {
 
-            System.out.println(this.name + " feel more full"); //add energy points
+            System.out.println(this.name + " feel more full");
             System.out.println(this.name + "'s energy has increased " + addEnergy());
         }
 
