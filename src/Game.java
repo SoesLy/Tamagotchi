@@ -10,6 +10,7 @@ public class Game {
         int chooseAnimal = scanner.nextInt();
         scanner.nextLine();
 
+        //Dog//
         if (chooseAnimal == 1) {  //Inspiration fra Laura og Elisa
             System.out.println("Here is your dog 🐶");
             System.out.println("What would you like to name it?");
@@ -20,7 +21,7 @@ public class Game {
             System.out.println("How old is " + dogName + "?");
             int dogAge = scanner.nextInt();
 
-            if (dogAge >= 0 && dogAge <= 10) {
+            if (dogAge <= 10) {
                 System.out.println("Omg, " + dogName + " is a puppy, how cute!");
             } else {
                 System.out.println(dogName + " is an adult dog, pawesome");
@@ -36,8 +37,10 @@ public class Game {
 
             Dog dog = new Dog(dogName, dogAge, "content", 50, dogColor, dogSound);
             System.out.println("Alrighty here is " + dogName + "'s details");
+            dog.printDogsDetail();
+            System.out.println("Now, lets play " + dogSound);
 
-
+            //Cat//
         } else if (chooseAnimal == 2) {
             System.out.println("Here is your cat 🐱");
             System.out.println("What would you like to name it?");
@@ -62,9 +65,14 @@ public class Game {
             System.out.println("What does " + catName + " say?");
             String catSound = scanner.next();
 
+            Cat cat = new Cat(catName, catAge, "content", 50, catColor, catSound);
             System.out.println("Here you have every details of " + catName);
-            System.out.println();
+            cat.printCatDetails();
+            System.out.println("Now, let's play " + catSound);
         }
+
+
+
     }
 
 }

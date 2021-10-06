@@ -17,13 +17,13 @@ public class Tamagotchi {
 
     public void feed() {
 
-        System.out.println(this.name + "feels more full" );
+        System.out.println(this.name + "feels more full"  ); //add energy points
 
     }
 
     public void play() {
 
-        System.out.println(this.name + "feels happy, but exhausted");
+        System.out.println(this.name + "feels happy, but exhausted"); //lose energy points
 
 
     }
@@ -34,6 +34,8 @@ public class Tamagotchi {
     }
 
     public void bath(){
+        System.out.println("No no, please don't...");
+        System.out.println(this.name + "feels more clean");
 
 
     }
