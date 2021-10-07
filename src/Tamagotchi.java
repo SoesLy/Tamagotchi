@@ -5,14 +5,16 @@ public class Tamagotchi {
     public String mood = "content";
     public int energy = 50;
     public String color;
+    public String sound;
 
-    public Tamagotchi(String name, int age, String mood, int energy, String color) {
+    public Tamagotchi(String name, int age, String mood, int energy, String color, String sound) {
 
         this.name = name;
         this.age = age;
         this.mood = mood;
         this.energy = energy;
         this.color = color;
+        this.sound = sound;
     }
 
     public void Mood(){

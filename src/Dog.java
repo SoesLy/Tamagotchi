@@ -1,12 +1,11 @@
 public class Dog extends Tamagotchi{
 
     public boolean puppyOrNot;
-    public String dogSound;
 
-    public Dog(String name, int age, String mood, int energy, String color, String dogSound, boolean puppyOrNot) {
-        super(name, age, mood, energy, color);
+
+    public Dog(String name, int age, String mood, int energy, String color, String sound, boolean puppyOrNot) {
+        super(name, age, mood, energy, color, sound);
         this.puppyOrNot = puppyOrNot;
-        this.dogSound = dogSound;
 
     }
 
@@ -14,7 +13,7 @@ public class Dog extends Tamagotchi{
     public String toString() {
         return "Dog{" +
                 "puppyOrNot=" + puppyOrNot +
-                ", dogSound='" + dogSound + '\'' +
+                ", sound='" + sound + '\'' +
                 ", name='" + name + '\'' +
                 ", age=" + age +
                 ", mood='" + mood + '\'' +
@@ -24,7 +23,7 @@ public class Dog extends Tamagotchi{
     }
 
     public void stand() {
-        System.out.println("Look what I can do!! " + dogSound);
+        System.out.println("Look what I can do!! " + sound);
 
         return;
     }
@@ -40,7 +39,7 @@ public class Dog extends Tamagotchi{
         System.out.println("Age: " + this.age);
         System.out.println("Puppy: " + this.puppyOrNot);
         System.out.println("Color: " + this.color);
-        System.out.println("Sound: " + this.dogSound);
+        System.out.println("Sound: " + this.sound);
         System.out.println("Energy: " + this.energy);
         System.out.println("mood: " + this.mood);
     }
