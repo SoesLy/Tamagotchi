@@ -26,10 +26,9 @@ public class Tamagotchi {
             mood = "Content";
         } else if(this.energy >= 25 && this.energy <= 50){
             mood = "tired";
-        } else if(this.energy ==0 && this.energy <=25){
+        } else if(this.energy == 0 && this.energy <=25){
             mood = "exhausted";
         }
-
     }
 
     public void feed() {
@@ -71,6 +70,4 @@ public class Tamagotchi {
         System.out.println(this.name + " feels more clean");
 
     }
-
-
 }
