@@ -46,12 +46,11 @@ public class Tamagotchi {
     public void play() {
         boolean play = true;
         if (play){
-            String addMood = mood + 5;
             int loseEnergy = energy - 5;
 
             System.out.println(this.name + "feels happy, but feels a little more tired"); //lose energy points
             System.out.println(this.name + "'s mood has increased " + energy + 5);
-            System.out.println("Mood is now: " + addMood);
+            System.out.println("Mood is now: " + mood);
             System.out.println(this.name + "'s energy has decreased " + loseEnergy);
         }
 
