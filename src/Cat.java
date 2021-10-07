@@ -1,18 +1,18 @@
 public class Cat extends Tamagotchi {
 
-    public boolean puppyOrNot;
+    public boolean kittenOrNot;
     public String catSound;
 
-    public Cat(String name, int age, String mood, int energy, String color, boolean puppyOrNot, String catSound) {
+    public Cat(String name, int age, String mood, int energy, String color, String catSound, boolean kittenOrNot) {
         super(name, age, mood, energy, color);
-        this.puppyOrNot = puppyOrNot;
+        this.kittenOrNot = kittenOrNot;
         this.catSound = catSound;
     }
 
     @Override
     public String toString() {
         return "Cat{" +
-                "puppyOrNot=" + puppyOrNot +
+                "puppyOrNot=" + kittenOrNot +
                 ", catSound='" + catSound + '\'' +
                 ", name='" + name + '\'' +
                 ", age=" + age +
@@ -32,6 +32,7 @@ public class Cat extends Tamagotchi {
 
         System.out.println("Name: " + this.name);
         System.out.println("Age: " + this.age);
+        System.out.println("Puppy? " + this.kittenOrNot);
         System.out.println("Color: " + this.color);
         System.out.println("Sound: " + this.catSound);
         System.out.println("Energy: " + this.energy);

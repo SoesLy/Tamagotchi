@@ -18,13 +18,16 @@ public class Tamagotchi {
     public void Mood(){
         String mood = "";
 
-        if(this.mood >= 75 && <= 100);
-    }
+        if(this.energy >= 75 && this.energy <= 100){
+            mood = "Happy";
+        } else if (this.energy >= 50 && this.energy <= 75){
+            mood = "Content";
+        } else if(this.energy >= 25 && this.energy <= 50){
+            mood = "tired";
+        } else if(this.energy ==0 && this.energy <=25){
+            mood = "exhausted";
+        }
 
-    public int addEnergy(){
-      int addEnergy = energy + 5;
-
-      return addEnergy;
     }
 
     public void feed() {
@@ -33,7 +36,7 @@ public class Tamagotchi {
         if (feed) {
 
             System.out.println(this.name + " feel more full");
-            System.out.println(this.name + "'s energy has increased " + addEnergy());
+            System.out.println(this.name + "'s energy has increased " + energy + 5);
         }
 
     }
@@ -44,8 +47,9 @@ public class Tamagotchi {
             String addMood = mood + 5;
             int loseEnergy = energy - 5;
 
-            System.out.println(this.name + "feels happy, but is exhausted"); //lose energy points
-            System.out.println(this.name + "'s mood has increased " + addEnergy());
+            System.out.println(this.name + "feels happy, but feels a little more tired"); //lose energy points
+            System.out.println(this.name + "'s mood has increased " + energy + 5);
+            System.out.println("Mood is now: " + mood +5);
             System.out.println(this.name + "'s energy has decreased " + loseEnergy);
         }
 
