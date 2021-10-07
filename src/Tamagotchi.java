@@ -68,7 +68,7 @@ public class Tamagotchi {
 
     public void bath(){
         System.out.println("");
-        System.out.println(this.name + "feels more clean");
+        System.out.println(this.name + " feels more clean");
 
     }
 
