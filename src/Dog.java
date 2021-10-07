@@ -29,6 +29,12 @@ public class Dog extends Tamagotchi{
         return;
     }
 
+    @Override
+    public void bath() {
+        super.bath();
+        System.out.println("Hey! whats going on... No I don't want to, no, noo... Hey, it's actaully a little nice!");
+    }
+
     public void printDogsDetail(){
         System.out.println("Name: " + this.name);
         System.out.println("Age: " + this.age);

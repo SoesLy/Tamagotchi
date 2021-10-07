@@ -28,6 +28,12 @@ public class Cat extends Tamagotchi {
         return;
     }
 
+    @Override
+    public void bath() {
+        super.bath();
+        System.out.println("Oh God NO!!! No, no, NOOOO, NOOOOOOOOOO!");
+    }
+
     public void printCatDetails(){
 
         System.out.println("Name: " + this.name);

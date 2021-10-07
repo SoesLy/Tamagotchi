@@ -49,7 +49,7 @@ public class Tamagotchi {
 
             System.out.println(this.name + "feels happy, but feels a little more tired"); //lose energy points
             System.out.println(this.name + "'s mood has increased " + energy + 5);
-            System.out.println("Mood is now: " + mood +5);
+            System.out.println("Mood is now: " + addMood);
             System.out.println(this.name + "'s energy has decreased " + loseEnergy);
         }
 
@@ -66,9 +66,10 @@ public class Tamagotchi {
     }
 
     public void bath(){
-        System.out.println("No no, please don't...");
+        System.out.println("");
         System.out.println(this.name + "feels more clean");
 
     }
+
 
 }
